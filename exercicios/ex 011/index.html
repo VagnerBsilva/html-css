@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens flexivel</title>
+</head>
+<body>
+    <h1> criando imagens tamanhos sdiferente </h1>
+     <p> tente abrir essas imagens com tamanhos diferente de tela </p>
+     <picture>
+        <source media="(max-width:750px )" srcset="imagem/foto-300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagem/foto-700.jpg" type="image/jpg">
+        <img src="imagem/foto-1000.jpg" alt="imagem flexivel">
+     </picture>
+     <h2> colocando audio </h2>
+       <audio src="audio/Cut.mp3" controls></audio>
+    
+</body>
+</html>

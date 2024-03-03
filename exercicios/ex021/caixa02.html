@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> grouping tags </title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        #principal{
+            background-color: rgb(18, 91, 91);
+            color: white;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 1px 3px 13px rgba(0, 0, 0, 0.452);     
+        }
+        
+        a{
+            text-decoration: none;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            margin: 5px;
+        }
+        h2{
+            background-color: rgba(83, 169, 140, 0.785);
+            width: 500px;
+            padding: 5px;
+        }
+        ol>p{
+            display:none;
+        }
+        ol:hover>p{
+            display: block;
+        }
+
+            
+    </style>
+</head>
+<body>
+    <!-- header é referente a cabeçalho da pagina -->
+    <header>
+        <h1 id="principal"> Vamos Estudar os Grupos de Tags </h1>
+        <!-- nav corresponde a navegaçao da oagina, onde colocara os links -->
+        <nav>
+            <ul>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <li> site do youtube </li>
+                </a>
+                <a href="https://www.cursoemvideo.com/curso" target="_blank">
+                    <li> site do curso em video </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <!-- main é o conteudo principal -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem totam architecto aut, laborum soluta praesentium maxime. Dolorum nesciunt, culpa nostrum consectetur similique nam, dicta perspiciatis molestias id, voluptates quisquam provident?</p>
+    </main>
+    <section>
+        <!-- section é assunto / noticia -->
+        <h2> Aqui veremos um poco sobre grouping tags </h2>
+    </section>
+    <article>
+        <!-- article é o artigo da pagina -->
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ipsam molestiae dolorem asperiores fugiat, doloremque quam at voluptatibus ab rerum. Hic, quam ipsum placeat reiciendis nostrum commodi libero assumenda cupiditate.</p>
+        <aside> 
+            <!-- aside é o assunto relativo ao artivo -->
+            <h1>as tags semanticas do grupo de tags são: </h1>
+            <ol>
+                <li> header </li>
+                <p> header é o cabeçalho da pagina </p>
+            </ol>
+            <ol>
+                <li> main </li>
+            </ol>
+            <ol> 
+                <li> footer </li>
+            </ol>
+        </aside>
+    </article>
+</body>
+</html>
