@@ -26,19 +26,29 @@ header>p {
    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 section.imagem{
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.877);
     color: white;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height:2em ;
+    font-size: 2em;
 }
 section.imagem>p{
-    background-color: rgba(0, 0, 0, 0.119);
+    background-color: rgba(0, 0, 0, 0.31);
     width: 300px;
     padding-left: 20px;
+}
+#img01{
+    background-image: url(../imagens/background001.jpg);
+}
+#img02{
+    background-image: url(../imagens/background002.jpg);
 }
 footer{
     background-color: black;
