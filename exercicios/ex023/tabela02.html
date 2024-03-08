@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabela grande </title>
     <style>
+    
         table{
             border-collapse: collapse;
         }
@@ -13,10 +14,19 @@
             padding: 20px;
            width: 400px;
         }
+       
         th,td{
             border:1px solid black;
             border-collapse: collapse;
         }
+        caption{
+            background-color: rgb(160, 163, 162);
+        } 
+        tbody>tr:nth-child(2n){
+            background-color: lightgray;
+        }
+            
+        
         tfoot{
             background-color:rgb(165, 185, 179) ;
         }
@@ -25,68 +35,58 @@
     </style>
 </head>
 <body>
+   
     <table>
+        <caption> População de Brasilia </caption>
         <thead>
-            <th> posição</th>
-            <th> Região administrativa</th>
-            <th> População</th>
+            <th scope="col" > Região administrativa</th>
+            <th scope="col"> População</th>
         </thead>
         <tbody>
             <tr>
-                <td>01</td>
                 <td>ceilândia</td>
                 <td>349955</td>
             </tr>
             <tr>
-                <td>2</td>
                 <td>samambaia</td>
                 <td>231942</td>
             </tr>
             <tr>
-                <td>3</td>
                 <td>plano piloto</td>
                 <td>217073</td>
             </tr>
             <tr>
-                <td>4</td>
                 <td>Taguatinga</td>
                 <td>210142</td>
             </tr>
             <tr>
-                <td>5</td>
                 <td>Planaltina</td>
                 <td>177540</td>
             </tr>
             <tr>
-                <td>6</td>
                 <td>Guará</td>
                 <td>133748</td>
             </tr>
             <tr>
-                <td>7</td>
                 <td>Gama</td>
                 <td>132404</td>
             </tr>
             <tr>
-                <td>8</td>
                 <td>Recanto das Emas</td>
                 <td>131058</td>
             </tr>
             <tr>
-                <td>9</td>
                 <td>Santa Maria</td>
                 <td>126262</td>
             </tr>
             <tr>
-                <td>10</td>
                 <td>Aguas Claras </td>
                 <td>117346</td>
             </tr>
         </tbody>
         <tfoot >
-            <th> </th>
-            <th>população de Brasilia</th>
-            <th></th>
+            <th scope="row">população de Brasilia</th>
+            <th>x</th>
         </tfoot>
         
     </table>
